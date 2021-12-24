@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--additional-color);
+  padding: 60px 0px;
+  .conteiner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .logo-adrs-conteiner {
+      margin-right: 70px;
+    }
+    .social {
+      margin-right: auto;
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+  &__item {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    list-style-type: none;
+    color: var(--footer-address-color);
+    transition: color var(--transition-duration) var(--transition-hover);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .address__actual {
+      color: var(--main-light-color);
+      text-decoration: none;
+      transition: color var(--transition-duration) var(--transition-hover);
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+    .address__reference {
+      padding: 0;
+      color: var(--middle-main-color);
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: var(--blue-color-hover);
+      }
+    }
+  }
+}
+
+.social {
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.subscribe {
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .subscribe__inpute {
+      background: var(--additional-color);
+      color: rgba(255, 255, 255, 0.6);
+      width: 358px;
+      height: 50px;
+      padding: 15px 16px;
+      margin-right: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+    }
+  }
+}
+
+.subscribe__inpute {
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.send-icon {
+  margin-left: 10px;
+}
