@@ -25,6 +25,9 @@
 //footer.//
 .social--footer {
   .social__list--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .social__link--footer {
       background: var(--soc-link-background);
       .social__link-item--footer {
