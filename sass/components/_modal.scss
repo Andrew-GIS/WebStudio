@@ -15,8 +15,13 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
   background-color: var(--main-light-color);
   border-radius: 4px;
   padding: 40px;
