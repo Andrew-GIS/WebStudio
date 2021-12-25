@@ -1,13 +1,39 @@
-.porfolio {
-  &__btns {
+// .porfolio {
+//   &__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     &-item {
+//       width: 370px;
+//       display: flex;
+//     }
+//   }
+// }
+
+.portfolio__btns {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // manual count 60px - ready to fix
+  margin-right: 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 611px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     margin-bottom: 50px;
   }
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    &-item {
-      width: 370px;
-      display: flex;
+  .btns__item {
+    list-style-type: none;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -16,24 +42,27 @@
   display: flex;
   flex-wrap: wrap;
   &-item {
-    width: 370px;
-    display: flex;
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
+    width: 450px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      // width: calc(100% / 2);
+      // &:not(:nth-child(2n + 2)) {
+      //   margin-right: 30px;
+      // }
+      // &:not(:nth-last-child(-n + 2)) {
+      //   margin-bottom: 30px;
+      // }
     }
-    &:not(:nth-last-child(-n + 3)) {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-.portfolio__btns {
-  margin-bottom: 50px;
-  .btns__item {
-    list-style-type: none;
-    margin-right: 8px;
-    &:last-child {
-      margin-right: 0px;
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      display: flex;
+      &:nth-child(3n + 3) {
+        margin-right: 0px;
+      }
+      // &:not(:nth-last-child(-n + 3)) {
+      //   margin-bottom: 30px;
+      // }
     }
   }
 }
@@ -59,6 +88,10 @@
       transform: translateY(0);
     }
   }
+}
+
+.portfolio-img {
+  width: 100%;
 }
 
 .portfolio__item-wrap {
