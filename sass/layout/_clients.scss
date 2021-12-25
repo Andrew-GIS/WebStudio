@@ -13,14 +13,22 @@
       margin-bottom: 50px;
     }
   }
-  &__list {
+  .clients__list {
+    display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
+
   .clients__item {
-    width: 170px;
+    margin: 15px;
     height: 92px;
-    &:not(:nth-child(3n + 6)) {
-      margin-right: 30px;
+    width: calc(100% / 2 - 30px);
+
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
     .clients__link {
       border: 1px solid var(--client-light-color);
