@@ -24,7 +24,6 @@
     @media screen and (max-width: 767px) {
       width: 100%;
     }
-
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
     }
@@ -36,18 +35,8 @@
 
 .card__img {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
-  // width: auto;
-  // @media screen and (min-width: 480px) {
-  //   height: 460px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   height: 374px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   height: 260px;
-  // }
 }
 
 .member {

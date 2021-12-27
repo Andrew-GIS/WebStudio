@@ -65,11 +65,65 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="open-menu-btn">
+        <button type="button" class="open-menu-btn" js-open-menu>
           <svg class="icon menu" width="24px" height="16px">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+        <div class="mob-menu is-hidden" js-menu-container>
+          <div class="mob-menu-top">
+            <button class="close-menu-btn" js-close-menu>
+              <svg class="icon close" width="18.67px" height="18.67px">
+                <use href="./images/icons.svg#icon-close-header"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list">
+              <li class="mob-menu__item current-page">
+                <a class="mob-menu__link" href="index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contact__list">
+              <li class="mob-menu-contact__item phone">
+                <a
+                  class="mob-menu-contact__link phone"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contact__item mail">
+                <a
+                  class="mob-menu-contact__link mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc">
+              <li class="mob-menu-soc__item">
+                <a class="mob-soc_link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-soc_link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-soc_link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a class="mob-soc_link" href="">LinkeIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -108,13 +162,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/technocrack_project-desk1x.jpg 1x,
+                        ./images/portfolio_image/technocrack_project-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/portfolio_image/technocrack_project-tab1x.jpg 1x,
+                        ./images/portfolio_image/technocrack_project-tab2x.jpg  2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/portfolio_image/technocrack_project-mob1x.jpg 1x,
+                        ./images/portfolio_image/technocrack_project-mob2x.jpg  2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/technocrack_project-desk1x.jpg"
+                      alt="Постер 'Технокряк' - веб-сайт на ноутбуке"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/technocrack_project.jpg"
+                    src="./images/portfolio_image/technocrack_project-desk1x.jpg"
                     alt="Постер 'Технокряк' - веб-сайт на ноутбуке"
                     width="370"
                     height="294"
-                  />
+                  /> -->
 
                   <p class="portfoilio__top-text">
                     Технокряк это современная площадка распространения
@@ -131,13 +213,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-desk1x.jpg 1x,
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-tab1x.jpg 1x,
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-mob1x.jpg 1x,
+                        ./images/portfolio_image/poster_new_orlean_vs_golden_star-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/poster_new_orlean_vs_golden_star-desk1x.jpg"
+                      alt="Постер 'New Orlean vs Golden Star' - два баскетболиста команд с мячем"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/poster_new_orlean_vs_golden_star.jpg"
+                    src="./images/portfolio_image/poster_new_orlean_vs_golden_star-desk1x.jpg"
                     alt="Постер 'New Orlean vs Golden Star' - два баскетболиста команд с мячем"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -155,13 +265,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/sea_food-desk1x.jpg 1x,
+                        ./images/portfolio_image/sea_food-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/sea_food-tab1x.jpg 1x,
+                        ./images/portfolio_image/sea_food-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/sea_food-mob1x.jpg 1x,
+                        ./images/portfolio_image/sea_food-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/sea_food-desk1x.jpg"
+                      alt="Постер The Seafood Restaurant"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/sea_food.jpg"
+                    src="./images/portfolio_image/sea_food-desk1x.jpg"
                     alt="Постер The Seafood Restaurant"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -179,13 +317,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/prime_headphones-desk1x.jpg 1x,
+                        ./images/portfolio_image/prime_headphones-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/prime_headphones-tab1x.jpg 1x,
+                        ./images/portfolio_image/prime_headphones-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/prime_headphones-mob1x.jpg 1x,
+                        ./images/portfolio_image/prime_headphones-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/prime_headphones-desk1x.jpg"
+                      alt="Постер The Seafood Restaurant"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/prime_headphones.jpg"
+                    src="./images/portfolio_image/prime_headphones-desk1x.jpg"
                     alt="Постер Prime - изображение наушников"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -203,13 +369,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/boxes_project-desk1x.jpg 1x,
+                        ./images/portfolio_image/boxes_project-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/boxes_project-tab1x.jpg 1x,
+                        ./images/portfolio_image/boxes_project-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/boxes_project-mob1x.jpg 1x,
+                        ./images/portfolio_image/boxes_project-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/boxes_project-desk1x.jpg"
+                      alt="Проект Boxes - изображение коробок бренда"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/boxes_project.jpg"
+                    src="./images/portfolio_image/boxes_project-desk1x.jpg"
                     alt="Проект Boxes - изображение коробок бренда"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -227,13 +421,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/inspiration_has_no_borders_project-desk1x.jpg 1x,
+                        ./images/portfolio_image/inspiration_has_no_borders_project-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/inspiration_has_no_borders_project-tab1x.jpg 1x,
+                        ./images/portfolio_image/inspiration_has_no_borders_project-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/inspiration_has_no_borders_project-mob1x.jpg 1x,
+                        ./images/portfolio_image/inspiration_has_no_borders_project-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/inspiration_has_no_borders_project-desk1x.jpg"
+                      alt="Проект 'Inspiration has no Borders' - изображение монитора в сайтом"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/inspiration_has_no_borders_project.jpg"
+                    src="./images/portfolio_image/inspiration_has_no_borders_project-desk1x.jpg"
                     alt="Проект 'Inspiration has no Borders' - изображение монитора в сайтом"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -251,13 +473,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/portfolio_image/limited_edition_publication-desk1x.jpg 1x,
+                        ../images/portfolio_image/limited_edition_publication-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/portfolio_image/limited_edition_publication-tab1x.jpg 1x,
+                        ../images/portfolio_image/limited_edition_publication-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/portfolio_image/limited_edition_publication-mob1x.jpg 1x,
+                        ../images/portfolio_image/limited_edition_publication-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/limited_edition_publication-desk1x.jpg"
+                      alt="Проект Limited Edition - изображение журнала"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/limited_edition_publication.jpg"
+                    src="./images/portfolio_image/poster_new_orlean_vs_golden_star-desk1x.jpg"
                     alt="Проект Limited Edition - изображение журнала"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -275,13 +525,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/lab_project-desk1x.jpg 1x,
+                        ./images/portfolio_image/lab_project-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/lab_project-tab1x.jpg 1x,
+                        ./images/portfolio_image/lab_project-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/lab_project-mob1x.jpg 1x,
+                        ./images/portfolio_image/lab_project-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/lab_project-desk1x.jpg"
+                      alt="Проект 'LAB' - изображение постера проекта"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/lab_project.jpg"
+                    src="./images/portfolio_image/lab_project-desk1x.jpg"
                     alt="Проект 'LAB' - изображение постера проекта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -299,13 +577,41 @@
             <li class="portfolio__list-item">
               <a class="portfolio__item" href="">
                 <div class="portfolio__item-wrap">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio_image/growing_business-desk1x.jpg 1x,
+                        ./images/portfolio_image/growing_business-desk2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/growing_business-tab1x.jpg 1x,
+                        ./images/portfolio_image/growing_business-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio_image/growing_business-mob1x.jpg 1x,
+                        ./images/portfolio_image/growing_business-mob2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio_image/growing_business-desk1x.jpg"
+                      alt="Приложение 'Growing Business' - изображение ноутбука с приложением"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-img"
-                    src="./images/portfolio_image/growing_business.jpg"
+                    src="./images/portfolio_image/growing_business-desk1x.jpg"
                     alt="Приложение 'Growing Business' - изображение ноутбука с приложением"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="portfoilio__top-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Totam voluptas eaque incidunt dicta architecto at et, ex
@@ -423,5 +729,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

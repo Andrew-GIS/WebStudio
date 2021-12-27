@@ -79,7 +79,6 @@
                 <svg class="icon menu" width="24px" height="16px">
                   <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
-                
         </button>
         <div class="mob-menu is-hidden" js-menu-container>
           <div class="mob-menu-top">
@@ -189,7 +188,7 @@
           <ul class="list what-we-do__list">
             <li class="what-we-do__item">
               <img
-                src="./images/studio_image/about-1.jpg"
+                src="./images/studio_image/about-1-1x.jpg"
                 alt="Работа с компьютером"
                 width="370"
                 height="294"
@@ -200,7 +199,7 @@
             </li>
             <li class="what-we-do__item">
               <img
-                src="./images/studio_image/about-2.jpg"
+                src="./images/studio_image/about-2-1x.jpg"
                 alt="Работа с телефоном"
                 width="370"
                 height="294"
@@ -211,7 +210,7 @@
             </li>
             <li class="what-we-do__item">
               <img
-                src="./images/studio_image/about-3.jpg"
+                src="./images/studio_image/about-3-1x.jpg"
                 alt="Работа с планшетом"
                 width="370"
                 height="294"
@@ -229,13 +228,36 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="list our-team__list">
             <li class="our-team__card">
+              <picture>
+                <source
+                 srcset="../images/studio_image/our_team/Ihor_Deminenko-desk1x.jpg 1x,
+                 ../images/studio_image/our_team/Ihor_Deminenko-desk2x.jpg 2x"
+                 media="(min-width: 1200px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Ihor_Deminenko-tab1x.jpg 1x,
+                 ../images/studio_image/our_team/Ihor_Deminenko-tab2x.jpg 2x"
+                 media="(min-width: 768px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Ihor_Deminenko-mob1x.jpg 1x,
+                 ../images/studio_image/our_team/Ihor_Deminenko-mob2x.jpg 2x"
+                 media="(min-width: 320px)"
+                 >
               <img
                 class="card__img"
-                src="./images/studio_image/Ihor_Deminenko.jpg"
+                src="../images/studio_image/our_team/Ihor_Deminenko-desk1x.jpg"
+                alt="Игорь Демьяненко - Product Designer"
+              />
+              </picture>
+              <!-- <img
+                srcset="./images/studio_image/our_team/Ihor_Deminenko-desk1x.jpg 1x, ./images/studio_image/our_team/Ihor_Deminenko-desk2x.jpg 2x"
+                class="card__img"
+                src="./images/studio_image/our_team/Ihor_Deminenko-desk1x.jpg"
                 alt="Игорь Демьяненко - Product Designer"
                 width="270"
                 height="260"
-              />
+              /> -->
               <div class="member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__position" lang="en">Product Designer</p>
@@ -296,13 +318,36 @@
               </div>
             </li>
             <li class="our-team__card">
+              <picture>
+                <source
+                 srcset="../images/studio_image/our_team/Olha_Repina-desk1x.jpg 1x, 
+                 ../images/studio_image/our_team/Olha_Repina-desk2x.jpg 2x"
+                 media="(min-width: 1200px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Olha_Repina-tab1x.jpg 1x,
+                  ../images/studio_image/our_team/Olha_Repina-tab2x.jpg 2x"
+                 media="(min-width: 768px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Olha_Repina-mob1x.jpg 1x,
+                  ../images/studio_image/our_team/Olha_Repina-mob2x.jpg 2x"
+                 media="(min-width: 320px)"
+                 >
               <img
                 class="card__img"
-                src="./images/studio_image/Olha_Repina.jpg"
+                src="../images/studio_image/our_team/Olha_Repina-desk1x.jpg"
+                alt="Ольга Репина - Frontend Developer"
+              />
+              </picture>
+              <!-- <img
+                class="card__img"
+                srcset="/images/studio_image/our_team/Olha_Repina-desk1x.jpg 1x, /images/studio_image/our_team/Olha_Repina-desk2x.jpg 2x"
+                src="./images/studio_image/our_team/Olha_Repina-desk1x.jpg"
                 alt="Ольга Репина - Frontend Developer"
                 width="270"
                 height="260"
-              />
+              /> -->
               <div class="member">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p class="member__position" lang="en">Frontend Developer</p>
@@ -360,13 +405,36 @@
               </div>
             </li>
             <li class="our-team__card">
+              <picture>
+                <source
+                 srcset="../images/studio_image/our_team/Nikolay_Tarasov-desk1x.jpg 1x, 
+                 ./images/studio_image/our_team/Nikolay_Tarasov-desk2x.jpg 2x"
+                 media="(min-width: 1200px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Nikolay_Tarasov-tab1x.jpg 1x,
+                  ./images/studio_image/our_team/Nikolay_Tarasov-tab2x.jpg 2x"
+                 media="(min-width: 768px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Nikolay_Tarasov-mob1x.jpg 1x,
+                  ./images/studio_image/our_team/Nikolay_Tarasov-mob2x.jpg 2x"
+                 media="(min-width: 320px)"
+                 >
               <img
                 class="card__img"
-                src="./images/studio_image/Nikolay_Tarasov.jpg"
+                src="../images/studio_image/our_team/Nikolay_Tarasov-desk1x.jpg"
+                alt="Николай Тарасов - Marketing"
+              />
+              </picture>
+              <!-- <img
+                class="card__img"
+                srcset="./images/studio_image/our_team/Nikolay_Tarasov-desk1x.jpg 1x, ./images/studio_image/our_team/Nikolay_Tarasov-desk2x.jpg 2x"
+                src="./images/studio_image/our_team/Nikolay_Tarasov-desk1x.jpg"
                 alt="Николай Тарасов - Marketing"
                 width="270"
                 height="260"
-              />
+              /> -->
               <div class="member">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p class="member__position" lang="en">Marketing</p>
@@ -419,13 +487,36 @@
               </div>
             </li>
             <li class="our-team__card">
+              <picture>
+                <source
+                 srcset="../images/studio_image/our_team/Mike_Ermakov-desk1x.jpg 1x, 
+                 ./images/studio_image/our_team/Mike_Ermakov-desk2x.jpg 2x"
+                 media="(min-width: 1200px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Mike_Ermakov-tab1x.jpg 1x,
+                  ./images/studio_image/our_team/Mike_Ermakov-tab2x.jpg 2x"
+                 media="(min-width: 768px)"
+                 >
+                 <source
+                 srcset="../images/studio_image/our_team/Mike_Ermakov-mob1x.jpg 1x,
+                  ./images/studio_image/our_team/Mike_Ermakov-mob2x.jpg 2x"
+                 media="(min-width: 320px)"
+                 >
               <img
                 class="card__img"
-                src="./images/studio_image/Mike_Ermakov.jpg"
+                src="../images/studio_image/our_team/Mike_Ermakov-desk1x.jpg"
+                alt="Михаил Ермаков - UI Designer"
+              />
+              </picture>
+              <!-- <img
+                class="card__img"
+                srcset="./images/studio_image/our_team/Mike_Ermakov-desk1x.jpg 1x, ./images/studio_image/our_team/Mike_Ermakov-desk2x.jpg 2x"
+                src="./images/studio_image/our_team/Mike_Ermakov-desk1x.jpg"
                 alt="Михаил Ермаков - UI Designer"
                 width="270"
                 height="260"
-              />
+              /> -->
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__position" lang="en">UI Designer</p>
