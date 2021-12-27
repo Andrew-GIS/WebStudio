@@ -13,17 +13,13 @@
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 100%;
-  //   transition-property: transform;
-  //   transition-duration: 2s;
-  //   transition-timing-function: ease;
-  //   transition: transform var(3000ms) var(--transition-hover);
   &__list {
     display: flex;
     flex-direction: column;
     align-items: left;
-    // margin-bottom: 302px;
   }
   &__item {
     margin-bottom: 32px;
@@ -89,6 +85,7 @@
   .mob-menu-soc {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     &__item {
       padding-right: 10px;
       margin-right: 10px;
