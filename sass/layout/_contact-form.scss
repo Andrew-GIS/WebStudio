@@ -99,7 +99,7 @@
   color: var(--middle-main-color);
   align-items: left;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     align-items: center;
