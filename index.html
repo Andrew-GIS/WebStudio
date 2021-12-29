@@ -75,59 +75,95 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="open-menu-btn" js-open-menu>
-                <svg class="icon menu" width="24px" height="16px">
+          <!-- <button type="button" class="open-menu-btn js-open-menu" aria-expended="false" aria-controls="mobile-menu"
+           >
+            <svg class="icon menu" aria-label="This is mobile menu switcher" style="width: 24px; height: 16px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button> -->
+       
+        <!-- <div class="menu__container js-menu-container" id="mobile-menu" data-menu>
+            <button type="button" class="menu__button-close js-close-menu"
+           >
+            <svg class="icon-menu-close" aria-label="This is mobile menu switcher" style="width: 19px; height: 19px">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+            </button>
+
+
+        <div class="menu__thumb">
+             <nav class="navigation">
+              <ul class="site-nav list">
+                <li class="site-nav__list-item">
+                  <a href="./index.html" class="link current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="site-nav__list-item">
+                  <a
+                    href="./portfolio.html"
+                    class="link site-nav__prtf-page"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav__list-item">
+                  <a href="" class="link site-nav__contacts-page">Контакты</a>
+                </li>
+              </ul> -->
+              
+         <button type="button" class="open-menu-btn"  js-open-menu>
+                <svg class="icon menu" aria-label="This is mobile menu switcher" width="24px" height="16px">
                   <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
         </button>
-        <div class="mob-menu is-hidden" js-menu-container>
-          <div class="mob-menu-top">
-            <button class="close-menu-btn " js-close-menu>
-                  <svg class="icon close" width="18.67px" height="18.67px">
-                    <use href="./images/icons.svg#icon-close-header"></use>
-                  </svg>
-            </button>
-            <ul class="mob-menu__list">
-              <li class="mob-menu__item current-page">
-                <a class="mob-menu__link" href="index.html">Студия</a>
-              </li>
-              <li class="mob-menu__item">
-                <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
-              </li>
-              <li class="mob-menu__item">
-                <a class="mob-menu__link" href="">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mob-menu-bottom">
-            <ul class="mob-menu-contact__list">
-              <li class="mob-menu-contact__item phone">
-                <a class="mob-menu-contact__link phone" href="tel:+380961111111"
-                  >
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="mob-menu-contact__item mail">
-                <a class="mob-menu-contact__link mail" href="mailto:info@devstudio.com">
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mob-menu-soc">
-              <li class="mob-menu-soc__item">
-                <a class="mob-soc_link" href="">Instagram</a>
-              </li>
-              <li class="mob-menu-soc__item">
-                <a class="mob-soc_link" href="">Twitter</a>
-              </li>
-              <li class="mob-menu-soc__item">
-                <a class="mob-soc_link" href="">Facebook</a>
-              </li>
-              <li class="mob-menu-soc__item">
-                <a class="mob-soc_link" href="">LinkeIn</a>
-              </li>
-            </ul>
-          </div>
+              <div class="mob-menu is-hidden" js-menu-container>
+                <div class="mob-menu-top">
+                <button class="close-menu-btn " js-close-menu>
+                      <svg class="icon close" width="18.67px" height="18.67px">
+                        <use href="./images/icons.svg#icon-close-header"></use>
+                      </svg>
+                </button>
+                <ul class="mob-menu__list">
+                  <li class="mob-menu__item current-page">
+                    <a class="mob-menu__link" href="index.html">Студия</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mob-menu-bottom">
+                <ul class="mob-menu-contact__list">
+                  <li class="mob-menu-contact__item phone">
+                    <a class="mob-menu-contact__link phone" href="tel:+380961111111"
+                      >
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mob-menu-contact__item mail">
+                    <a class="mob-menu-contact__link mail" href="mailto:info@devstudio.com">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mob-menu-soc">
+                  <li class="mob-menu-soc__item">
+                    <a class="mob-soc_link" href="">Instagram</a>
+                  </li>
+                  <li class="mob-menu-soc__item">
+                    <a class="mob-soc_link" href="">Twitter</a>
+                  </li>
+                  <li class="mob-menu-soc__item">
+                    <a class="mob-soc_link" href="">Facebook</a>
+                  </li>
+                  <li class="mob-menu-soc__item">
+                    <a class="mob-soc_link" href="">LinkeIn</a>
+                  </li>
+                </ul>
+              </div>
         </div>
         
       </div>
@@ -786,20 +822,21 @@
             ></textarea>
           </div>
 
-          <label class="form__checkbox"
-            ><input
+          <label class="form__checkbox">
+            <input
               type="checkbox"
               name="policy"
               class="form__checkbox-input visually-hidden"
             />
-            <svg class="form__checkbox-icon" width="16" height="15">
+            <svg class="form__checkbox-icon" >
               <use href="./images/icons.svg#icon-ok-vector"></use>
             </svg>
-            Соглашаюсь с рассылкой и принимаю&nbsp
-            <a href="" class="form__checkbox-contract">
-              Условия договора</a
-            ></label
-          >
+            <div class="contract-wrap">
+            Соглашаюсь с рассылкой и принимаю&nbsp<a class="form__checkbox-contract">Условия договора</a>
+            </div>
+            <!-- <a href="" class="form__checkbox-contract">
+              Условия договора</a> -->
+          </label>
           <button type="submit" class="btn submit--btn">Отправить</button>
         </form>
       </div>

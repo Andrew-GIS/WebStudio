@@ -7,15 +7,8 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 60px;
-      margin-left: auto;
-      margin-right: auto;
       align-items: center;
       justify-content: center;
-      @media screen and (min-width: 768px) {
-        // 76px-15px(padding)
-        margin-left: 61px;
-        margin-right: 165px;
-      }
       @media screen and (min-width: 1200px) {
         display: block;
         margin: 0px;
@@ -32,10 +25,9 @@
     }
     @media screen and (min-width: 768px) {
       .address-social-conteiner {
-        align-items: baseline;
         display: flex;
-        flex-direction: row;
-        justify-content: stretch;
+        align-items: baseline;
+        justify-content: space-around;
       }
     }
     @media screen and (min-width: 1200px) {

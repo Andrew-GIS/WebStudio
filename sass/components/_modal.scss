@@ -15,7 +15,11 @@
 }
 
 .modal {
-  @media screen and (min-width: 320px) and (max-width: 1999px) {
+  @media screen and (min-width: 320px) and (max-width: 449px) {
+    width: 320px;
+    height: 609px;
+  }
+  @media screen and (min-width: 450px) and (max-width: 1999px) {
     width: 450px;
     height: 609px;
   }
